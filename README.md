@@ -17,7 +17,7 @@ Input:
 
 Processing:
     - Gaussian blur sigma = 1.5,
-    - MIP-based Otsu thresholding,
+    - Maximum intensity projection (MIP)-based Otsu thresholding,
     - Optional threshold offset,
     - Optional fixed threshold,
     - Optional size filtering,
