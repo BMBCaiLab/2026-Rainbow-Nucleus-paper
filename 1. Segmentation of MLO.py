@@ -12,7 +12,7 @@ from skimage.measure import label, regionprops
 # Input .tif file (T, Z, C, Y, X)
 INPUT_TIF = "cell 5737.tif"   # change filename.
 
-gaussian_sigma = 1.5  # Gaussian blur. Default is 1.0.
+gaussian_sigma = 1.5  # Gaussian blur. Default is 1.5.
 
 # Fixed-threshold settings per channel as needed. Default is False.
 use_fixed_threshold = {
@@ -50,7 +50,7 @@ threshold_offset = {
     5: 0,
 }
 
-# Size filter (min_voxels) per channel. Default: True, to get rid of pixelated noise. 
+# Size filter (min_voxels) per channel. Default: True, to get rid of pixelated noise and false thresholded objects.
 use_size_filter = {
     1: True,
     2: True,
